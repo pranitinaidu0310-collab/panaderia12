@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#dff3ff">
+<title>Panaderia | Little Moments, Freshly Baked</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--blue:#dff3ff;--blue2:#bfe7fa;--pink:#ffe1e9;--pink2:#f8b9cb;--ink:#344452;--muted:#71808b;--white:#fff;--accent:#e58da8;--line:#e8edf0;--shadow:0 16px 45px rgba(77,117,139,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fffdfd;color:var(--ink);font-family:'DM Sans',sans-serif}button,input,textarea,select{font:inherit}button{cursor:pointer}.announcement{background:var(--blue);text-align:center;padding:9px 15px;font-size:12px;letter-spacing:.08em;color:#557185}.nav{position:sticky;top:0;z-index:20;background:rgba(255,253,253,.92);backdrop-filter:blur(12px);border-bottom:1px solid #edf1f3}.nav-inner{max-width:1180px;margin:auto;padding:15px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}.logo{font-family:'Playfair Display',serif;font-size:27px;letter-spacing:.04em;color:#4c7187;text-decoration:none}.logo span{color:#df91aa}.navlinks{display:flex;gap:27px;align-items:center}.navlinks a{font-size:13px;color:var(--ink);text-decoration:none}.navlinks a:hover{color:var(--accent)}.cart-btn,.primary{border:0;border-radius:30px;background:var(--ink);color:white;padding:12px 19px;font-weight:600;box-shadow:0 7px 18px #34445220}.cart-btn span{background:white;color:var(--ink);border-radius:50%;padding:2px 7px;margin-left:6px}.menu-toggle{display:none;background:none;border:0;font-size:24px}.hero{background:linear-gradient(115deg,#e4f5ff 0%,#fff1f5 100%);overflow:hidden}.hero-inner{max-width:1180px;margin:auto;min-height:570px;padding:70px 22px;display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:35px}.eyebrow{color:#cf7895;text-transform:uppercase;letter-spacing:.2em;font-size:11px;font-weight:700}.hero h1{font-family:'Playfair Display',serif;font-size:clamp(48px,6vw,76px);line-height:1.05;margin:17px 0;color:#3f596b}.hero h1 em{font-style:normal;color:#dc91aa}.hero p{max-width:470px;color:#647987;line-height:1.8;font-size:15px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.primary{background:#df91aa;text-decoration:none;display:inline-block}.secondary{border:1px solid #9fc9dc;border-radius:30px;padding:11px 18px;color:#54758a;text-decoration:none;font-size:14px}.hero-art{position:relative;min-height:410px;display:flex;align-items:center;justify-content:center}.hero-photo{width:min(100%,490px);height:390px;object-fit:cover;border-radius:48% 48% 24px 24px;box-shadow:var(--shadow);border:9px solid #ffffffb8}.float-note{position:absolute;left:0;bottom:26px;background:white;border-radius:18px;padding:15px 20px;box-shadow:var(--shadow);font-family:'Playfair Display',serif;color:#56758a;transform:rotate(-5deg)}.sparkle{position:absolute;right:2%;top:30px;font-size:42px;color:#e6a0b5}.section{max-width:1180px;margin:auto;padding:82px 22px}.section-head{text-align:center;margin-bottom:35px}.section-head .eyebrow{display:block}.section h2{font:600 clamp(32px,4vw,44px) 'Playfair Display',serif;margin:10px 0;color:#405d70}.section-head p{color:var(--muted);font-size:14px}.category-row{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:0 0 30px}.chip{border:1px solid #dceaf0;background:white;color:#607888;border-radius:30px;padding:9px 17px;font-size:13px}.chip.active,.chip:hover{background:var(--blue);border-color:var(--blue2)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{border:1px solid #edf0f2;border-radius:22px;overflow:hidden;background:white;box-shadow:0 8px 28px rgba(76,111,132,.06);transition:.25s}.card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.card img{width:100%;height:205px;object-fit:cover;background:var(--pink)}.card-body{padding:18px}.tag{font-size:10px;text-transform:uppercase;letter-spacing:.14em;color:#d17e9a;font-weight:700}.card h3{font:600 20px 'Playfair Display',serif;margin:7px 0}.card p{font-size:12px;line-height:1.6;color:var(--muted);min-height:39px}.card-foot{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:16px}.price{font-size:12px;color:#78909e}.add{border:0;border-radius:22px;background:var(--pink);color:#91566b;padding:9px 14px;font-size:12px;font-weight:700}.add:hover{background:#f6c6d5}.notice{margin:25px auto 0;max-width:750px;padding:13px 16px;background:#f4faff;border:1px solid #e0f1fa;border-radius:12px;color:#688292;text-align:center;font-size:12px;line-height:1.6}.story{background:linear-gradient(120deg,#fff0f4,#e9f7ff)}.story-inner{max-width:1000px;margin:auto;padding:72px 22px;text-align:center}.story-inner h2{font:600 42px 'Playfair Display',serif;color:#405d70;margin:12px}.story-inner p{max-width:720px;margin:15px auto;color:#647987;line-height:1.9;font-size:14px}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:35px}.feature{background:#ffffffb8;padding:22px;border-radius:18px}.feature b{display:block;font:600 19px 'Playfair Display',serif;margin:8px}.feature span{font-size:12px;color:#71808b}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:stretch}.contact-card{padding:30px;border-radius:24px;background:#f1f9fd}.contact-card h3{font:600 25px 'Playfair Display',serif;margin-top:0}.contact-card p{color:#687d89;line-height:1.8;font-size:13px}.contact-card a{color:#bd718c}.map{border:0;width:100%;height:100%;min-height:280px;border-radius:24px}.footer{background:#e7f5fc;padding:30px 22px;text-align:center;color:#6a8290;font-size:12px}.footer .logo{display:block;margin-bottom:8px}.overlay{display:none;position:fixed;inset:0;background:#25384577;z-index:40}.overlay.show{display:block}.drawer{position:fixed;right:-480px;top:0;height:100%;width:min(460px,100%);background:white;z-index:50;box-shadow:-15px 0 40px #23384720;transition:.3s;display:flex;flex-direction:column}.drawer.open{right:0}.drawer-head{padding:22px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}.drawer-head h2{font:600 26px 'Playfair Display',serif;margin:0}.close{border:0;background:var(--pink);border-radius:50%;width:35px;height:35px}.cart-items{padding:18px 22px;overflow:auto;flex:1}.empty{text-align:center;color:#81939d;padding:45px 10px}.cart-line{display:grid;grid-template-columns:1fr auto;gap:10px;padding:14px 0;border-bottom:1px solid var(--line)}.cart-line strong{font:600 17px 'Playfair Display',serif}.cart-line small{display:block;color:#81939d;font-size:11px;margin-top:4px}.qty{display:flex;align-items:center;gap:9px}.qty button{border:1px solid #e7d6dd;background:#fff4f7;border-radius:50%;width:25px;height:25px}.checkout{padding:18px 22px;border-top:1px solid var(--line);max-height:52%;overflow:auto}.checkout h3{font:600 20px 'Playfair Display',serif;margin:0 0 12px}.field{margin:9px 0}.field label{font-size:11px;color:#72848e;display:block;margin-bottom:5px}.field input,.field textarea,.field select{width:100%;border:1px solid #e2e9ed;border-radius:10px;padding:11px;outline:none;font-size:13px}.field input:focus,.field textarea:focus{border-color:#a7d5e9}.checkout .primary{width:100%;margin-top:9px}.fine{font-size:10px;color:#8a989f;line-height:1.5}.toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,20px);background:#344452;color:white;padding:12px 18px;border-radius:25px;font-size:12px;opacity:0;transition:.25s;z-index:80}.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:800px){.navlinks{display:none;position:absolute;top:65px;left:0;right:0;background:white;padding:20px;flex-direction:column;border-bottom:1px solid var(--line)}.navlinks.show{display:flex}.menu-toggle{display:block}.nav-inner{padding:12px 17px}.hero-inner{grid-template-columns:1fr;padding-top:55px}.hero-art{min-height:300px}.hero-photo{height:300px;width:90%}.float-note{left:3%;bottom:5px}.grid{grid-template-columns:repeat(2,1fr)}.contact-grid{grid-template-columns:1fr}.map{min-height:250px}}
+@media(max-width:520px){.grid{grid-template-columns:1fr}.card img{height:230px}.section{padding:60px 17px}.hero-inner{padding:48px 18px}.hero h1{font-size:51px}.features{grid-template-columns:1fr}.cart-btn{padding:10px 13px}.logo{font-size:24px}.checkout{max-height:58%}}
+</style>
+</head>
+<body>
+<div class="announcement">A LITTLE SOMETHING SWEET, MADE WITH LOVE ✿ MUMBAI</div>
+<header class="nav"><div class="nav-inner">
+<a class="logo" href="#">panaderia<span>.</span></a>
+<button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+<nav class="navlinks" id="navlinks"><a href="#home">Home</a><a href="#menu">Our menu</a><a href="#story">Our story</a><a href="#contact">Find us</a></nav>
+<button class="cart-btn" id="openCart">Your basket <span id="cartCount">0</span></button>
+</div></header>
+
+<main>
+<section class="hero" id="home"><div class="hero-inner">
+<div><span class="eyebrow">Small-batch bakes · Mumbai</span><h1>Made with love.<br><em>Baked for joy.</em></h1>
+<p>From dreamy cakes to little everyday treats, discover freshly baked favourites and thoughtful custom creations from Panaderia.</p>
+<div class="hero-actions"><a class="primary" href="#menu">Explore the menu ✿</a><a class="secondary" href="#contact">Get in touch</a></div></div>
+<div class="hero-art"><span class="sparkle">✧</span><img class="hero-photo" src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1100&q=85" alt="Celebration cake"><div class="float-note">a little slice<br>of happiness ♡</div></div>
+</div></section>
+
+<section class="section" id="menu"><div class="section-head"><span class="eyebrow">The good stuff</span><h2>A menu to fall for</h2><p>Pick your favourites and send your order directly to us on WhatsApp.</p></div>
+<div class="category-row" id="filters"><button class="chip active" data-filter="all">Everything</button><button class="chip" data-filter="cakes">Cakes</button><button class="chip" data-filter="desserts">Desserts</button><button class="chip" data-filter="bakes">Bakery favourites</button><button class="chip" data-filter="special">Special picks</button></div>
+<div class="grid" id="productGrid"></div>
+<div class="notice">Menu items are based on publicly listed Panaderia offerings. Prices, sizes, availability and customisation are confirmed by the bakery when you place your order. Product photographs on this demo are illustrative and should be replaced with Panaderia's own approved photos.</div>
+</section>
+
+<section class="story" id="story"><div class="story-inner"><span class="eyebrow">A little about us</span><h2>Good things take a little butter.</h2><p>Panaderia is a neighbourhood baking venture known for made-to-order cakes, dessert favourites and thoughtful bakes. Whether it is a celebration or a treat-yourself kind of day, there is always room for something lovely.</p><div class="features"><div class="feature"><div>♡</div><b>Made with care</b><span>Thoughtful bakes for little and big moments.</span></div><div class="feature"><div>✿</div><b>Custom creations</b><span>Ask about celebration cakes and special requests.</span></div><div class="feature"><div>☁</div><b>Something for everyone</b><span>Ask about vegan and gluten-free options.</span></div></div></div></section>
+
+<section class="section" id="contact"><div class="section-head"><span class="eyebrow">Come say hello</span><h2>Let's make it a sweet day</h2><p>For orders, custom cakes and availability, reach out to Panaderia.</p></div>
+<div class="contact-grid"><div class="contact-card"><h3>Panaderia – Richa Bharara</h3><p>Shop No. 4, Versova View CHS Ltd,<br>Saint Louis Convent Road, next to Good Shepherd Church,<br>Four Bungalows, Andheri West, Mumbai – 400053.</p><p><b>Hours:</b> Public listing shows 10:00 AM – 8:00 PM. Please confirm before visiting.</p><p><b>Order enquiries:</b> <a id="phoneLink" href="tel:+917738511830">+91 77385 11830</a></p><p><a href="https://www.google.com/maps/search/?api=1&query=Panaderia+Richa+Bharara+Four+Bungalows+Mumbai" target="_blank" rel="noopener">Open directions in Google Maps ↗</a></p><a class="primary" id="contactWhatsapp" href="#" target="_blank" rel="noopener">Chat with us on WhatsApp</a></div>
+<iframe class="map" loading="lazy" title="Map showing Panaderia in Andheri West" src="https://maps.google.com/maps?q=Panaderia%20Richa%20Bharara%20Four%20Bungalows%20Mumbai&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe></div>
+</section>
+</main>
+<footer class="footer"><a class="logo" href="#">panaderia<span>.</span></a>Made for sweet moments · Mumbai<br><br>© <span id="year"></span> Panaderia. This independent demo website is not an official site until approved by the bakery.</footer>
+
+<div class="overlay" id="overlay"></div><aside class="drawer" id="drawer" aria-label="Shopping basket">
+<div class="drawer-head"><h2>Your little basket ♡</h2><button class="close" id="closeCart" aria-label="Close basket">✕</button></div>
+<div class="cart-items" id="cartItems"><div class="empty">Your basket is waiting for something sweet ✿</div></div>
+<div class="checkout"><h3>Order details</h3>
+<div class="field"><label for="customerName">Your name *</label><input id="customerName" placeholder="Name" required></div>
+<div class="field"><label for="customerPhone">Your phone number *</label><input id="customerPhone" type="tel" placeholder="Mobile number" required></div>
+<div class="field"><label for="orderType">Order type</label><select id="orderType"><option>Delivery (confirm availability)</option><option>Pickup</option></select></div>
+<div class="field"><label for="customerAddress">Delivery address / pickup note</label><textarea id="customerAddress" rows="2" placeholder="Your address or pickup preference"></textarea></div>
+<div class="field"><label for="neededDate">When do you need it?</label><input id="neededDate" type="date"></div>
+<div class="field"><label for="orderNotes">Anything else? (size, message, allergies, customisation)</label><textarea id="orderNotes" rows="2" placeholder="Tell us what you have in mind..."></textarea></div>
+<button class="primary" id="sendOrder">Send order on WhatsApp ✿</button>
+<p class="fine">This sends your basket and details to Panaderia via WhatsApp. Your order is not confirmed until the bakery replies with availability, final pricing and delivery/payment details. No online payment is collected on this demo site.</p>
+</div></aside><div class="toast" id="toast"></div>
+
+<script>
+/* IMPORTANT: Verify this WhatsApp number with the bakery before publishing. */
+const WHATSAPP_NUMBER = "917738511830";
+
+const products = [
+ {id:1,name:"Biscoff Cheesecake",category:"desserts",desc:"Biscoff cream cheese on a buttery biscotti crumb base.",image:"https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=900&q=80",label:"Customer favourite"},
+ {id:2,name:"Classic Baked Cheesecake",category:"desserts",desc:"A classic baked cheesecake. Ask about available toppings.",image:"https://images.unsplash.com/photo-1524351199678-941a58a3df50?auto=format&fit=crop&w=900&q=80",label:"Classic"},
+ {id:3,name:"Pastel De Fruits Cake",category:"cakes",desc:"A beautiful cake with rich cream and exotic fruits.",image:"https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=900&q=80",label:"Celebration"},
+ {id:4,name:"Cocoa Bliss Cake",category:"cakes",desc:"Chocolate sponge with smooth chocolate frosting.",image:"https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80",label:"Chocolate"},
+ {id:5,name:"Nutty Delight Cake",category:"cakes",desc:"Dark chocolate, hazelnut mousse and toasted nuts.",image:"https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=900&q=80",label:"Nutty"},
+ {id:6,name:"Salted Caramel Cake",category:"cakes",desc:"Moist chocolate cake with salted caramel ganache.",image:"https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?auto=format&fit=crop&w=900&q=80",label:"Sweet & salty"},
+ {id:7,name:"Seasonal Affair Cake",category:"cakes",desc:"Vanilla or chocolate cake with seasonal mango or strawberry filling.",image:"https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=900&q=80",label:"Seasonal"},
+ {id:8,name:"Naranja Cake",category:"cakes",desc:"Orange meringue base with orange cream cheese frosting.",image:"https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=900&q=80",label:"Citrus"},
+ {id:9,name:"Churro Cake",category:"cakes",desc:"Cinnamon-infused cake with chocolate sauce and churros.",image:"https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&fit=crop&w=900&q=80",label:"A little twist"},
+ {id:10,name:"Tres Leches",category:"special",desc:"A much-loved signature-style dessert; ask for regular or vegan availability.",image:"https://images.unsplash.com/photo-1551024506-0&fit=crop&w=900&q=80",label:"Signature pick"},
+ {id:11,name:"Tiramisu",category:"desserts",desc:"Ask the bakery about current portions and availability.",image:"https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=900&q=80",label:"Coffee-kissed"},
+ {id:12,name:"Tea Cakes & Croissants",category:"bakes",desc:"Fresh bakery favourites. Ask what is available today.",image:"https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80",label:"Everyday treat"},
+ {id:13,name:"Cookies",category:"bakes",desc:"Including much-loved chocolate chip cookies; ask for today's selection.",image:"https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=900&q=80",label:"Cookie time"},
+ {id:14,name:"Fresh Breads",category:"bakes",desc:"Ask about multigrain and gluten-free bread options.",image:"https://images.unsplash.com/photo-1585478259715-876acc5be8eb?auto=format&fit=crop&w=900&q=80",label:"Freshly baked"},
+ {id:15,name:"Vegan & Gluten-free Treats",category:"special",desc:"Ask about vegan desserts, gluten-free cookies and breads.",image:"https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=80",label:"Dietary-friendly"}
+];
+
+let cart = {};
+const grid = document.getElementById("productGrid");
+const cartItems = document.getElementById("cartItems");
+const drawer = document.getElementById("drawer");
+const overlay = document.getElementById("overlay");
+function renderProducts(filter="all"){
+ grid.innerHTML = products.filter(p=>filter==="all"||p.category===filter).map(p=>`
+ <article class="card"><img src="${p.image}" alt="${p.name}" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=900&q=80'">
+ <div class="card-body"><span class="tag">${p.label}</span><h3>${p.name}</h3><p>${p.desc}</p><div class="card-foot"><span class="price">Price on enquiry</span><button class="add" onclick="addToCart(${p.id})">＋ Add to basket</button></div></div></article>`).join("");
+}
+function addToCart(id){cart[id]=(cart[id]||0)+1;renderCart();toast("Added to your basket ♡");}
+function changeQty(id,delta){cart[id]=(cart[id]||0)+delta;if(cart[id]<=0)delete cart[id];renderCart();}
+function renderCart(){
+ const entries=Object.entries(cart);const count=entries.reduce((s,[,q])=>s+q,0);
+ document.getElementById("cartCount").textContent=count;
+ if(!entries.length){cartItems.innerHTML='<div class="empty">Your basket is waiting for something sweet ✿</div>';return;}
+ cartItems.innerHTML=entries.map(([id,q])=>{const p=products.find(x=>x.id==id);return `<div class="cart-line"><div><strong>${p.name}</strong><small>Price confirmed by bakery</small></div><div class="qty"><button onclick="changeQty(${id},-1)">−</button><b>${q}</b><button onclick="changeQty(${id},1)">+</button></div></div>`}).join("");
+}
+function openCart(){drawer.classList.add("open");overlay.classList.add("show");}
+function closeCart(){drawer.classList.remove("open");overlay.classList.remove("show");}
+document.getElementById("openCart").onclick=openCart;document.getElementById("closeCart").onclick=closeCart;overlay.onclick=closeCart;
+document.getElementById("filters").addEventListener("click",e=>{const b=e.target.closest("button[data-filter]");if(!b)return;document.querySelectorAll(".chip").forEach(x=>x.classList.remove("active"));b.classList.add("active");renderProducts(b.dataset.filter);});
+document.getElementById("sendOrder").addEventListener("click",()=>{
+ const entries=Object.entries(cart);if(!entries.length){toast("Add something to your basket first!");return;}
+ const name=document.getElementById("customerName").value.trim(),phone=document.getElementById("customerPhone").value.trim();
+ if(!name||!phone){toast("Please add your name and phone number.");return;}
+ const type=document.getElementById("orderType").value,address=document.getElementById("customerAddress").value.trim(),date=document.getElementById("neededDate").value,notes=document.getElementById("orderNotes").value.trim();
+ const lines=entries.map(([id,q])=>{const p=products.find(x=>x.id==id);return `• ${p.name} × ${q}`;}).join("\n");
+ const message=`Hello Panaderia! I'd like to place an order:\n\n${lines}\n\nName: ${name}\nPhone: ${phone}\nOrder type: ${type}\nAddress / note: ${address||"Not provided"}\nNeeded on: ${date||"Please advise"}\nCustomisation / notes: ${notes||"None"}\n\nPlease confirm availability, final prices and payment/delivery details. Thank you!`;
+ window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`,"_blank");
+});
+function toast(msg){const t=document.getElementById("toast");t.textContent=msg;t.classList.add("show");setTimeout(()=>t.classList.remove("show"),2200);}
+document.getElementById("contactWhatsapp").href=`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Hello Panaderia! I'd like to enquire about placing an order.")}`;
+document.getElementById("menuToggle").onclick=()=>document.getElementById("navlinks").classList.toggle("show");
+document.querySelectorAll(".navlinks a").forEach(a=>a.addEventListener("click",()=>document.getElementById("navlinks").classList.remove("show")));
+document.getElementById("year").textContent=new Date().getFullYear();
+renderProducts();renderCart();
+</script>
+</body>
+</html>
